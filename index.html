@@ -3,45 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="css/stylecss" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="Logo">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+      <div class="top-menu">
+        <div class="container">
+          <div class="logo">
+            Техномарт
+            <!--<img src="http://placehold.it/150x100" alt="Логотип">-->
+          </div>
+          <a class="top-menu-item top-menu-search"  href="#"  >
+            Поиск
+          </a>
+          <a class="top-menu-item top-menu-bookmark"  href="#" >
+            Закладки
+          </a>
+          <a class="top-menu-item top-menu-basket"  href="#">
+            Корзина
+          </a>
+          <a  class="top-menu-item top-menu-order"  href="#" >
+            Оформить заказ
+          </a>
+        </div>
       </div>
-      <ul class="top-menu">
-        <li>
-          <a class="top-menu-item" href="#">Поиск</a>
-        </li>
-        <li>
-          <a class="top-menu-item" href="#">Закладки</a>
-        </li>
-        <li>
-          <a class="top-menu-item" href="#">Корзина</a>
-        </li>
-        <li>
-          <a class="top-menu-item" href="#">Оформить заказ</a>
-        </li>
-      </ul>
-      <div class="heder-block-info">
-        <div class="info-market">
+      <div class="container heder-block-info">
+        <div class="heder-block-info-item info-market">
           <span>Интернет магазин строительных материалов и инструментов для ремота</span>
         </div>
-        <div class="header-address-phone">
+        <div class="heder-block-info-item header-address-phone">
           <span class="header-phone">+7(812)555-05-55</span>
           <span class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
         </div>
-        <div class="user-block">
+        <div class="heder-block-info-item user-block">
           <a class="user-block-item" href="#">
             <span>Войти</span>
           </a>
           <a class="user-block-item" href="#">
             <span>Регистраци</span>
-          </a>
+            </a>
         </div>
       </div>
-      <ul class="main-menu clearfix">
+      <ul class="main-menu container">
         <li  class="main-menu-li">
           <a class="main-menu-item" href="#">Главная</a>
         </li>
@@ -66,60 +69,54 @@
       </ul>
     </header>
     <main>
-      <section class="product-category">
+      <section class="product-category container">
         <div class="product-category-item-cover">
-          <a class="main-menu-item" href="#">
-            Материалы
-            <span class="product-category-item-label">На любой вкус</span>
-          </a>
+          Материалы
+          <a class="product-category-item-label" href="#">На любой вкус</a>
         </div>
         <div class="product-category-item-cover">
-          <a class="main-menu-item" href="#">
-            Инструменты
-            <span class="product-category-item-label">На все случаи</span>
+          Инструменты
+          <a class="product-category-item-label" href="#">На все случаи</a>
           </a>
         </div>
-        <div class="product-category-item-cover">
-          <a class="main-menu-item" href="#">
-            Техника
-            <span class="product-category-item-label">Для стройки</span>
+        <div class="product-category-item-cover last-in-row">
+          Техника
+          <a class="product-category-item-label" href="#">Для стройки</a>
           </a>
         </div>
-        <div class="product-category-item-cover product-category-item-slider">
+        <div class="product-category-item-cover product-category-item-slider  last-in-col">
           <div class="product-category-item-slid">
             <h3>ПЕРФОРАТОРЫ</h3>
             <span>Настоящие мужские игрушки</span>
             <div class="product-category-item-slider-prew"></div>
             <div class="product-category-item-slider-next"></div>
             <a class="button" href="#">Открыть каталог</a>
+          </div>
+          <div class="product-category-item-slid">
+            <h3>ДРЕЛИ</h3>
+            <span> Соседям на радость!</span>
+            <div class="product-category-item-slider-prew"></div>
+            <div class="product-category-item-slider-next"></div>
+            <a class="button" href="#">Открыть каталог</a>
+          </div>
         </div>
-        <div class="product-category-item-slid">
-          <h3>ДРЕЛИ</h3>
-          <span> Соседям на радость!</span>
-          <div class="product-category-item-slider-prew"></div>
-          <div class="product-category-item-slider-next"></div>
-          <a class="button" href="#">Открыть каталог</a>
-      </div>
-        </div>
-        <div class="product-category-item-cover">
-          <a class="main-menu-item" href="#">
+        <div>
+          <div class="product-category-item-cover last-in-row">
             Скидки 50%
-            <span class="product-category-item-label">На 350 товаров</span>
-          </a>
-        </div>
-        <div class="product-category-item-cover">
-          <a class="main-menu-item" href="#">
+            <a class="product-category-item-label" href="#">На 350 товаров</a>
+          </div>
+          <div class="product-category-item-cover last-in-row last-in-col">
             Доставка
-            <span class="product-category-item-label">Бесплатно</span>
-          </a>
+            <a class="product-category-item-label" href="#">Бесплатно</a>
+          </div>
         </div>
       </section>
       <section class="block-info-index">
-        <div  class="block-info-index-header">
-          <h2>Популярные товары</h2>
+        <div  class="block-info-index-header  container">
+          <h2>Популярные товары:</h2>
           <a class="button" href="#">Все популярные товары</a>
         </div>
-        <div class="catalog-index">
+        <div class="catalog-index container">
           <article class="product">
             <div class="product-photo">
               <img src="img/bosch_9000.jpg">
@@ -156,7 +153,7 @@
               </a>
             </div>
           </article>
-          <article class="product">
+          <article class="product ">
             <div class="product-photo">
               <img src="img/bosch_2000.jpg">
             </div>
@@ -171,11 +168,11 @@
         </div>
       </section>
       <section class="block-info-index">
-        <div  class="block-info-index-header">
+        <div  class="block-info-index-header container">
           <h2>Популярные производители</h2>
           <a class="button" href="#">Все производители</a>
         </div>
-        <div class="popular-producers">
+        <div class="popular-producers  container">
           <a class="popular-producers-logo" href="#">
             <img src="img/bosch.jpg">
           </a>
@@ -185,7 +182,7 @@
           <a class="popular-producers-logo" href="#">
             <img src="img/DeWalt.jpg">
           </a>
-          <a class="popular-producers-logo" href="#">
+          <a class="popular-producers-logo  last-in-row" href="#">
             <img src="img/interskol.jpg">
           </a>
           <a class="popular-producers-logo" href="#">
@@ -197,46 +194,54 @@
           <a class="popular-producers-logo" href="#">
             <img src="img/AEG.jpg">
           </a>
-          <a class="popular-producers-logo" href="#">
+          <a class="popular-producers-logo last-in-row" href="#">
             <img src="img/Metabo.jpg">
           </a>
         </div>
       </section>
       <secion class="services">
-
-        <p>Хороший интернет -магазин отличается от плохого не только ценами</p>
-        <p>Мы стараемся изи всех сил, чтобы  сделать ваши покупки приятными</p>
+        <div class="container">
+          <h2 class="services-heder">Сервисы</h2>
+          <span>Хороший интернет -магазин отличается от плохого не только ценами<br>
+          Мы стараемся изи всех сил, чтобы  сделать ваши покупки приятными</span>
+        </div>
         <div class="slider">
-          <ul class="services-list">
-            <li class="services-list-item services-list-item-current">Доставка</li>
-            <li class="services-list-item">Гарантия</li>
-            <li class="services-list-item">Кредит</li>
-          </ul>
-          <div class="slide">
+          <div class="slide container">
+            <ul class="services-list">
+              <li class="services-list-item services-list-item-current">Доставка</li>
+              <li class="services-list-item">Гарантия</li>
+              <li class="services-list-item">Кредит</li>
+            </ul>
             <div class="slide-column">
               <div class="service-info">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
               </div>
-              <div class="slide-column">
-                <img src="http://placehold.it/150x100">
-              </div>
+              <img src="img/slider_delivery.png">
             </div>
           </div>
-          <div class="slide">
+          <div class="slide container display_none">
+            <ul class="services-list">
+              <li class="services-list-item">Доставка</li>
+              <li class="services-list-item services-list-item-current">Гарантия</li>
+              <li class="services-list-item">Кредит</li>
+            </ul>
             <div class="slide-column">
               <div class="service-info">
                 <h3>Гарантия</h3>
                 <p>Если купленный у нас товар поломается или заискрит, фтакже в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый<br>
                 Дом уж восстановите как-нибудь сами.</p>
               </div>
-              <div class="slide-column">
-                <img src="http://placehold.it/150x100">
-              </div>
+              <img src="img/slider_guaranty.png">
             </div>
           </div>
-          <div class="slide">
+          <div class="slide container display_none">
+            <ul class="services-list">
+              <li class="services-list-item">Доставка</li>
+              <li class="services-list-item">Гарантия</li>
+              <li class="services-list-item services-list-item-current">Кредит</li>
+            </ul>
             <div class="slide-column">
               <div class="service-info">
                 <h3>Кредит</h3>
@@ -244,14 +249,11 @@
                 Кредитные консультанты придут к вам на помощь.</p>
                 <a class="button" href="#">Отправить заявку</a>
               </div>
-              <div class="slide-column">
-                <img src="http://placehold.it/150x100">
-              </div>
+              <img src="img/slider_credit.png">
             </div>
           </div>
-        </div>
       </section>
-      <section class="about-company">
+      <section class="about-company container">
         <div class="about-company-info">
           <h4> КОМПАНИЯ "ТЕХНОМАРТ"</h4>
           <p>Настоящий мужской шоппинг начинается здесь! огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -269,57 +271,71 @@
           <h4>Контакты</h4>
           <p>Вы можете забрать товар сами,<br>закхав в наш ошис:</p>
           <div class="map">
-            <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
-            <img class="marker_map"  src="img/marker_map.png" alt="Маркер">
+            <!-- <a href="#"><img  src="img/map.png" alt="Карта"></a> -->
+            <!-- <img class="marker_map"  src="img/marker_map.png" alt="Маркер"> -->
           </div>
+          <img class="display_none" src="img/map.png" alt="">
           <a class="button" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="logo-footer">
-        <img src="http://placehold.it/150x100" alt="Логотип">
+      <div class="container">
+        <div class="footer-left-column">
+          <div class="logo-footer logo">
+            Техномарт
+            <!-- <img src="http://placehold.it/150x100" alt="Логотип"> -->
+          </div>
+          <section class="footer-contacts">
+            <p>
+              г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+            </p>
+            <p>
+              8 812 450-25-25
+            </p>
+          </section>
+        </div>
+        <div class="footer-right-column">
+          <section class="footer-menu">
+            <ul>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </section>
+          <section class="footer-category">
+            <ul>
+              <li><a href="#">Материалы</a></li>
+              <li><a href="#">Техника</a></li>
+              <li><a href="#">Инструмент</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
-      <section class="footer-contacts">
-        <p>
-          г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-        </p>
-        <p>
-          8 812 450-25-25
-        </p>
-      </section>
-      <section class="footer-menu">
-        <ul>
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </section>
-      <section class="footer-category">
-        <ul>
-          <li ><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
-      </section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-        <a class="social-btn social-btn-tw" href="#">Twitter</a>
-      </section>
-      <section class="footer-feedback">
-        <p>Обратная связь
-          <a class="copyright" href="https://htmlacademy.ru">mail@htmlacademy.ru </a>
-        </p>
-      </section>
-      <section class="footer-copyright">
-        <p>Разработано -
-          <a class="copyright" href="https://htmlacademy.ru">htmlacademy.ru </a>
-        </p>
-      </section>
+      <div class="container">
+        <span class="footer-all-rights-reserved">
+          (c) 2010-2016 Компания  "Техномарт"<br>
+          Все права защищены
+        </span>
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+        </section>
+        <section class="footer-feedback">
+          <p>Обратная связь
+            <a class="copyright" href="https://htmlacademy.ru">mail@htmlacademy.ru </a>
+          </p>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано -
+            <a class="copyright" href="https://htmlacademy.ru">htmlacademy.ru </a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
