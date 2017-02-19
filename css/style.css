@@ -100,7 +100,7 @@ header {
   color:#ffffff;
   background-color: #293449;
 }
-.search::before
+/*.search::before
 {
   content:"";
   position:absolute;
@@ -112,7 +112,7 @@ header {
   width: 17px;
   height: 17px;
   background-position: -5px -32px;
-}
+}*/
 
 /*.search input:default::-webkit-input-placeholder{
   color:#293449;
