@@ -89,6 +89,7 @@ header {
   padding:0;
 }
 .search  {
+  position: relative;
   display: block;
   width: 100%;
   min-height: 42px;
@@ -98,6 +99,19 @@ header {
   border: none;
   color:#ffffff;
   background-color: #293449;
+}
+.search::before
+{
+  content:"";
+  position:absolute;
+  background-color:red;
+  /*background-image: url("img/spritesheet.png");
+  background-repeat: no-repeat;
+  top:10px;
+  left:10px;*/
+  width: 17px;
+  height: 17px;
+  background-position: -5px -32px;
 }
 
 /*.search input:default::-webkit-input-placeholder{
