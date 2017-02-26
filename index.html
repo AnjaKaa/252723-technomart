@@ -14,16 +14,16 @@
           <a class="logo" href="index.html">
             Техномарт
           </a>
-          <div class="top-menu-item top-menu-search" >
+          <div class="top-menu-item top-menu-search with-icon sprite-icon-search" >
             <form action="#" method="get">
               <input class="search" id="search" name="search" placeholder="Поиск:" type="search" value ="" required>
               <label for="search" class="search_label">Поиск:</label>
             </form>
           </div>
-          <a class="top-menu-item top-menu-bookmark"  href="#" >
+          <a class="top-menu-item top-menu-bookmark  with-icon sprite-icon-bookmark"  href="#" >
             Закладки: <span class="count-bookmark">0</span>
           </a>
-          <a class="top-menu-item top-menu-basket"  href="#">
+          <a class="top-menu-item top-menu-basket  with-icon sprite-icon-basket"  href="#">
             Корзина: <span class="count-product_in-basket">0</span>
           </a>
           <a  class="top-menu-item top-menu-order"  href="#" >
@@ -36,11 +36,11 @@
           <span>Интернет магазин строительных материалов и&nbsp;инструментов для ремонта</span>
         </div>
         <div class="heder-block-info-item header-address-phone">
-          <span class="header-phone">+7 (812) 555-05-55</span>
+          <span class="header-phone  with-icon sprite-icon-phone">+7 (812) 555-05-55</span>
           <span class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
         </div>
         <div class="heder-block-info-item user-block">
-          <a class="user-block-item user-block-item-enter" href="#">
+          <a class="user-block-item user-block-item-enter  with-icon sprite-icon-login" href="#">
             Войти
           </a>
           <a class="user-block-item user-block-item-reg" href="#">
@@ -74,42 +74,49 @@
     </header>
     <main>
       <section class="product-category container">
-        <div class="product-category-item-cover category-yellow">
+        <div class="product-category-item-cover category-yellow with-icon sprite-material new_flag">
           Материалы
           <a class="product-category-item-label" href="#">На любой вкус</a>
         </div>
-        <div class="product-category-item-cover category-blue">
+        <div class="product-category-item-cover category-blue  with-icon sprite-instrument">
           Инструмент
           <a class="product-category-item-label" href="#">На все случаи
           </a>
         </div>
-        <div class="product-category-item-cover category-pink last-in-row">
+        <div class="product-category-item-cover category-pink last-in-row  with-icon sprite-hardware">
           Техника
           <a class="product-category-item-label" href="#">Для стройки</a>
-
         </div>
-        <div class="product-category-item-cover product-category-item-slider  last-in-col">
-          <div class="product-category-item-slide perforator-slide">
-            <h3 class="slide-header">ПЕРФОРАТОРЫ</h3>
-            <span>Настроящие мужские игрушки</span>
-            <div class="product-category-item-slider-prew"></div>
-            <div class="product-category-item-slider-next"></div>
-            <a class="button product-category-slider-button" href="#">Открыть каталог</a>
+        <div>
+          <input class="product-category-item-slider_input" type="radio" name="point" id="btn-1" checked>
+          <input class="product-category-item-slider_input" type="radio" name="point" id="btn-2">
+          <div class="product-category-item-cover product-category-item-slider  last-in-col">
+            <div class="product-category-item-slide perforator-slide" id="slide-1">
+              <h3 class="slide-header">ПЕРФОРАТОРЫ</h3>
+              <span>Настроящие мужские игрушки</span>
+              <div class="product-category-item-slider-prew"></div>
+              <div class="product-category-item-slider-next"></div>
+              <a class="button product-category-slider-button" href="#">Открыть каталог</a>
+            </div>
+            <div class="product-category-item-slide drill-slide"  id="slide-2">
+              <h3  class="slide-header">ДРЕЛИ</h3>
+              <span> Соседям на радость!</span>
+              <div class="product-category-item-slider-prew"></div>
+              <div class="product-category-item-slider-next"></div>
+              <a class="button product-category-slider-button" href="#">Открыть каталог</a>
+            </div>
           </div>
-          <div class="product-category-item-slide drill-slide display_none">
-            <h3  class="slide-header">ДРЕЛИ</h3>
-            <span> Соседям на радость!</span>
-            <div class="product-category-item-slider-prew"></div>
-            <div class="product-category-item-slider-next"></div>
-            <a class="button product-category-slider-button" href="#">Открыть каталог</a>
+          <div class="controls">
+            <label class="product-category-item-slider_label" for="btn-1"></label>
+            <label class="product-category-item-slider_label" for="btn-2"></label>
           </div>
         </div>
         <div>
-          <div class="product-category-item-cover  category-green last-in-row">
+          <div class="product-category-item-cover  category-green last-in-row  with-icon sprite-sale">
             Скидки 50%
             <a class="product-category-item-label" href="#">На 350 товаров</a>
           </div>
-          <div class="product-category-item-cover category-yellow last-in-row last-in-col">
+          <div class="product-category-item-cover category-yellow last-in-row last-in-col  with-icon sprite-delivery">
             Доставка
             <a class="product-category-item-label" href="#">Бесплатно</a>
           </div>
@@ -140,7 +147,7 @@
               <img src="img/bosch_3000.jpg" width="220" height="150"  alt="товар">
             </div>
             <div class="product-description">
-              <h5 class="product-description-heder">  Перфоратор BOSCH BFG 3000</h5>
+              <h5 class="product-description-heder">Перфоратор BOSCH BFG 3000</h5>
               <s class="product-price-old">22500 Р.</s>
               <a class="catalog-btn" href="#">
                 <b class="product-price">15500 Р.</b>
@@ -163,7 +170,7 @@
             <a class="buy-product" href="#">Купить</a>
             <a class="to-bookmarks" href="#">В закладки</a>
           </article>
-          <article class="product ">
+          <article class="product  new_flag">
             <div class="product-photo">
               <img src="img/bosch_2000.jpg" width="220" height="150"  alt="товар">
             </div>
@@ -217,44 +224,36 @@
           <span>Хороший интернет -магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы  сделать ваши покупки приятными.</span>
         </div>
-        <div class="slider">
-          <div class="slide container ">
-            <ul class="services-list">
-              <li class="services-list-item services-list-item-current">Доставка</li>
-              <li class="services-list-item">Гарантия</li>
-              <li class="services-list-item">Кредит</li>
-            </ul>
+        <div class="slider services-slider container">
+          <input class="services-slider_input" type="radio" name="services" id="btn-3" checked>
+          <input class="services-slider_input" type="radio" name="services" id="btn-4">
+          <input class="services-slider_input" type="radio" name="services" id="btn-5">
+          <ul class="services-list">
+            <li class="services-list-item"><label class="service_label" for="btn-3">Доставка</label></li>
+            <li class="services-list-item"><label class="service_label" for="btn-4">Гарантия</label></li>
+            <li class="services-list-item"><label class="service_label" for="btn-5">Кредит</label></li>
+          </ul>
+          <div class="slide" id="slide-3">
             <div class="service-info service-info-delivery">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,<br> поднимая его на ваш на этаж!</p>
             </div>
           </div>
-          <div class="slide container display_none">
-            <ul class="services-list">
-              <li class="services-list-item">Доставка</li>
-              <li class="services-list-item services-list-item-current">Гарантия</li>
-              <li class="services-list-item">Кредит</li>
-            </ul>
+          <div class="slide"  id="slide-4">
             <div class="service-info service-info-guaranty">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, фтакже в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый<br>
               Дом уж восстановите как-нибудь сами.</p>
             </div>
           </div>
-          <div class="slide container display_none">
-            <ul class="services-list">
-              <li class="services-list-item">Доставка</li>
-              <li class="services-list-item">Гарантия</li>
-              <li class="services-list-item services-list-item-current">Кредит</li>
-            </ul>
+          <div class="slide" id="slide-5">
             <div class="service-info service-info-credit">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут к вам на помощь.</p>
               <a class="button" href="#">Отправить заявку</a>
             </div>
-
           </div>
         </div>
       </section>
@@ -325,9 +324,9 @@
           Все права защищены
         </span>
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+          <a class="social-btn social-btn-vk  with-icon sprite-icon-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb  with-icon sprite-icon-facebook" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst  with-icon sprite-icon-instagramm" href="#">Twitter</a>
         </section>
         <section class="footer-feedback">
           Обратная связь
